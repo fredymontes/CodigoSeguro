@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+    <link rel="stylesheet" href="resources/css/style.css"> 
+</head>
+<body>
+    <h1> Página de inicio</h1>
+    <% if (login){ %>
+        <h1> El usuario conectado es : <strong> <%= name %></strong></h1>
+        <a href="logout" class="a-logout"> SALIR </a>
+    <% }else { %>
+        <h1> <strong> <% name %></strong></h1>
+        <h1> Debes iniciar con tu cuenta</h1>
+        <a href="login" class="a-logout"> INICIAR SESIÓN </a>
+        <% } %>
+</body>
+</html>
